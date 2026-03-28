@@ -34,12 +34,16 @@ Run both services using Maven:
 
 Bash
 mvn spring-boot:run
+````
+````
 2. Trigger a Single Request
 
 Observe the retry logs in the caller-service console:
 
 Bash
 curl http://localhost:8080/test/full-jitter
+````
+````
 3. Run the Load Test (The "Thundering Herd" Test)
 
 Simulate 20 concurrent requests to see how Jitter spreads the load:
