@@ -70,3 +70,14 @@ retry.base-delay=100
 retry.multiplier=2.0
 unstable.failure-rate=70
 ````
+
+
+## Summary: The Caller Service's "To-Do" List
+````
+1. Receive the request from you (the user).
+2. Consult the RetryFactory for the math.
+3. Attempt the call to the Callee.
+4. Wait (efficiently using Virtual Threads) if it fails.
+5. Calculate a unique, randomized "Jitter" time for the next try.
+6 Report the final success or failure back to you.
+````
