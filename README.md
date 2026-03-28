@@ -62,7 +62,9 @@ decorrelated	Threads drift apart rapidly (some wait 100ms, some 5s).	Safe. Distr
 The behavior can be tuned in application.properties:
 
 ### Properties
+````
 retry.max-attempts=5
 retry.base-delay=100
 retry.multiplier=2.0
 unstable.failure-rate=70
+````
